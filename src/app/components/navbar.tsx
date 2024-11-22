@@ -2,16 +2,27 @@
 
 import {useState} from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
     <nav className="navbar">
-      <div className="brand">POV Publishing</div>
+      <div className="brand">
+        <Link href="/">
+          <Image
+            src="/img/pov-bug.png"
+            alt="POV Publishing Logo"
+            width={80}
+            height={80}
+          />
+        </Link>
+      </div>
 
       <button
         className="mobile-menu-btn"
+        aria-label="Toggle navigation menu"
         onClick={() => setIsMenuOpen(!isMenuOpen)}>
         <span className="hamburger"></span>
       </button>
