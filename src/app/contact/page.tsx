@@ -1,8 +1,17 @@
 export default function Contact() {
   return (
-    <main className="container mx-auto px-4">
-      <h1 className="text-3xl font-bold my-6">Contact Us</h1>
-      {/* Add your contact form or content here */}
-    </main>
+    <div className="container mx-auto px-4 md:px-16 pt-4 md:pt-8 max-w-6xl">
+      <div className="grid grid-cols-1 gap-y-8 md:gap-y-16">
+        <div>
+          <h1 className="max-w-5xl">Contact</h1>
+          <p className="max-w-4xl">
+            Get in touch with Persistence of Vision Publishing.
+          </p>
+        </div>
+
+        {/* Contact form or information will go here */}
+        <div className="max-w-4xl">{/* Contact content will go here */}</div>
+      </div>
+    </div>
   );
 }
