@@ -1,5 +1,4 @@
 import type {Config} from "tailwindcss";
-import type {PluginAPI} from "tailwindcss/types/config";
 
 export default {
   content: [
@@ -10,22 +9,15 @@ export default {
   theme: {
     extend: {
       fontFamily: {
-        "zilla-slab": ["var(--font-zilla-slab)"],
+        cormorant: ["Cormorant Garamond", "serif"],
+        zilla: ["var(--font-zilla)"],
+      },
+      fontSize: {
+        base: "var(--text-base)",
+        lg: "var(--text-lg)",
+        "2xl": "var(--text-2xl)",
+        "3xl": "var(--text-3xl)",
       },
     },
   },
-  plugins: [
-    function ({addBase}: PluginAPI) {
-      addBase({
-        h1: {fontFamily: "var(--font-zilla-slab)"},
-        p: {
-          fontSize: "1.5rem",
-          lineHeight: "1.5",
-          "@screen md": {
-            fontSize: "1.675rem",
-          },
-        },
-      });
-    },
-  ],
 } satisfies Config;
