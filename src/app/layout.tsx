@@ -17,9 +17,12 @@ const zillaSlabHighlight = Zilla_Slab_Highlight({
 export default function RootLayout({children}: {children: React.ReactNode}) {
   return (
     <html lang="en" className={zillaSlabHighlight.variable}>
-      <body className={cormorantGaramond.className}>
-        <Navbar />
-        {children}
+      <body
+        className={`${cormorantGaramond.className} min-h-screen w-screen overflow-x-hidden`}>
+        <div className="flex flex-col min-h-screen w-full">
+          <Navbar />
+          <main className="flex-grow w-full">{children}</main>
+        </div>
       </body>
     </html>
   );

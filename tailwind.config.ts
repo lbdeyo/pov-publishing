@@ -1,4 +1,5 @@
 import type {Config} from "tailwindcss";
+import type {PluginAPI} from "tailwindcss/types/config";
 
 export default {
   content: [
@@ -14,7 +15,7 @@ export default {
     },
   },
   plugins: [
-    function ({addBase}) {
+    function ({addBase}: PluginAPI) {
       addBase({
         h1: {fontFamily: "var(--font-zilla-slab)"},
         p: {
