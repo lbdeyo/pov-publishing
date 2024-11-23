@@ -32,6 +32,9 @@ const Navbar = () => {
           <Link href="/history-podcast" className="nav-link text-[1.5rem] mr-8">
             History Podcast
           </Link>
+          <Link href="/comics" className="nav-link text-[1.5rem] mr-8">
+            Comics
+          </Link>
           <Link href="/contact" className="nav-link text-[1.5rem]">
             Contact
           </Link>
@@ -87,6 +90,12 @@ const Navbar = () => {
               className="py-2"
               onClick={() => setIsMenuOpen(false)}>
               History Podcast
+            </Link>
+            <Link
+              href="/comics"
+              className="py-2"
+              onClick={() => setIsMenuOpen(false)}>
+              Comics
             </Link>
             <Link
               href="/contact"
