@@ -56,20 +56,20 @@ export default function Home() {
             Join us for in-depth discussions about literature, history, and the
             creative process.
           </p>
-          <div className="flex justify-start gap-2 md:gap-4 mt-3 h-[200px]">
+          <div className="grid grid-cols-2 gap-2 md:gap-4 mt-3 md:h-[195px] md:flex md:justify-start">
             <Image
               src="/img/cover-images/aoy-podcast-logo-tag.jpg"
               alt="All Our Yesterdays Podcast"
-              width={200}
-              height={300}
-              className="h-full w-auto object-contain"
+              width={195}
+              height={195}
+              className="w-full h-auto md:h-full md:w-auto object-contain"
             />
             <Image
               src="/img/pov-podcast-bug.jpg"
               alt="Book 2"
-              width={200}
-              height={300}
-              className="h-full w-auto object-contain"
+              width={195}
+              height={195}
+              className="w-full h-auto md:h-full md:w-auto object-contain"
             />
           </div>
         </div>
