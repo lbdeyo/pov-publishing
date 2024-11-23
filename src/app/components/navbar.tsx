@@ -8,7 +8,7 @@ const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
-    <nav className="bg-white shadow relative w-full">
+    <nav className="bg-[#f5f1e8] relative w-full">
       <div className="flex items-center justify-between md:justify-start px-2 md:px-12 py-2 md:container md:mx-auto md:max-w-7xl">
         <Link href="/" className="flex-shrink-0">
           <Image
@@ -62,7 +62,7 @@ const Navbar = () => {
         </div>
       </div>
       {isMenuOpen && (
-        <div className="md:hidden bg-white border-t">
+        <div className="md:hidden bg-[#f5f1e8] border-t">
           <div className="flex flex-col px-4 py-2">
             <Link
               href="/artists-writers"
