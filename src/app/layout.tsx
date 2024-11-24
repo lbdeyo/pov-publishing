@@ -21,7 +21,9 @@ export default function RootLayout({children}: {children: React.ReactNode}) {
         className={`${cormorantGaramond.className} min-h-screen w-screen overflow-x-hidden`}>
         <div className="flex flex-col min-h-screen w-full">
           <Navbar />
-          <main className="flex-grow w-full pt-24">{children}</main>
+          <main className="flex-grow w-full pt-24 transition-[padding] duration-300">
+            {children}
+          </main>
         </div>
       </body>
     </html>

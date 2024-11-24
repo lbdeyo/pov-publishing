@@ -27,6 +27,17 @@ const Navbar = () => {
     }
   }, []);
 
+  useEffect(() => {
+    const main = document.querySelector("main");
+    if (main) {
+      if (isMenuOpen) {
+        main.style.paddingTop = "420px"; // Increased from 400px
+      } else {
+        main.style.paddingTop = "96px"; // Regular padding
+      }
+    }
+  }, [isMenuOpen]);
+
   const toggleTheme = () => {
     const newTheme = theme === "light" ? "dark" : "light";
     setTheme(newTheme);
