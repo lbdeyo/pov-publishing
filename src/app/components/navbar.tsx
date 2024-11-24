@@ -51,7 +51,10 @@ const Navbar = () => {
       style={{backgroundColor: "var(--nav-bg)"}}>
       <div className="container mx-auto max-w-6xl px-4">
         <div className="flex items-center md:space-x-8 py-2">
-          <Link href="/" className="flex-shrink-0">
+          <Link
+            href="/"
+            className="flex-shrink-0"
+            onClick={() => setIsMenuOpen(false)}>
             <Image
               src="/img/pov-bug.png"
               alt="POV Publishing"
