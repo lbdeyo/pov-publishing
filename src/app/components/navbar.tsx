@@ -90,6 +90,7 @@ const Navbar = () => {
                 className="sr-only peer"
                 checked={theme === "dark"}
                 onChange={toggleTheme}
+                aria-label="Toggle dark mode"
               />
               <div
                 className="w-11 h-6 bg-gray-400 peer-focus:outline-none rounded-full peer 
@@ -100,7 +101,8 @@ const Navbar = () => {
             </label>
             <button
               onClick={() => setIsMenuOpen(!isMenuOpen)}
-              className="md:hidden p-2 focus:outline-none">
+              className="md:hidden p-2 focus:outline-none"
+              aria-label={isMenuOpen ? "Close menu" : "Open menu"}>
               <svg
                 className="w-6 h-6"
                 fill="none"

@@ -44,7 +44,7 @@
   }
 
   h2 {
-    @apply text-[1.8rem] md:text-[length:var(--text-3xl)] leading-8 mb-1;
+    @apply text-[1.8rem] md:text-[length:var(--text-3xl)] leading-[1.25] mb-1;
   }
 
   h1 + p {
@@ -57,4 +57,10 @@
     @apply hover:underline hover:underline-offset-2 hover:decoration-1;
     color: var(--text-primary);
   }
+}
+
+/* Style all links except those in the navbar */
+a:not(nav a) {
+  @apply no-underline hover:underline;
+  color: var(--h1-color);
 }
