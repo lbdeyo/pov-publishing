@@ -114,7 +114,6 @@ export default function HistoryPodcast() {
           <div>
             <iframe
               title="2. Lives of a Quark"
-              allowtransparency="true"
               height="150"
               width="100%"
               data-name="pb-iframe-player"
