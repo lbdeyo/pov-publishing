@@ -73,7 +73,46 @@ export default function Home() {
             />
           </div>
         </div>
-        {/* Add more column pairs as needed */}
+        <div>
+          <h2>Music</h2>
+          <p>Hip-hop and body rock.</p>
+          <div className="grid grid-cols-2 gap-2 md:gap-4 mt-3 md:h-[195px] md:flex md:justify-start">
+            <Image
+              src="/img/cover-images/catfish-hunters-cover.png"
+              alt="The Catfish Hunters"
+              width={195}
+              height={195}
+              className="w-full h-auto md:h-full md:w-auto object-contain"
+            />
+            <Image
+              src="/img/cover-images/man-from-space-cover.png"
+              alt="Book 2"
+              width={195}
+              height={195}
+              className="w-full h-auto md:h-full md:w-auto object-contain"
+            />
+          </div>
+        </div>
+        <div>
+          <h2>Comics</h2>
+          <p>Hell yes, we got comics.</p>
+          <div className="grid grid-cols-2 gap-2 md:gap-4 mt-3 md:h-[195px] md:flex md:justify-start">
+            <Image
+              src="/img/cover-images/walt-comic.jpg"
+              alt="Walt Holcombe"
+              width={195}
+              height={195}
+              className="w-full h-auto md:h-full md:w-auto object-contain"
+            />
+            <Image
+              src="/img/cover-images/penny-comic.jpg"
+              alt="Book 2"
+              width={195}
+              height={195}
+              className="w-full h-auto md:h-full md:w-auto object-contain"
+            />
+          </div>
+        </div>
       </div>
     </div>
   );
