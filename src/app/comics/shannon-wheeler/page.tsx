@@ -21,39 +21,38 @@ export default function ShannonWheeler() {
           width={800}
           height={600}
         />
-
-        <section id="anticipation" className="scroll-mt-24 mb-16">
-          <Image
-            src="/img/os-img/too-much-coffee-anticipation.jpg"
-            alt="anticipation"
-            width={800}
-            height={600}
-          />
-        </section>
-        <section id="cat" className="scroll-mt-24 mb-16">
-          <Image
-            src="/img/os-img/too-much-coffee-cat.jpg"
-            alt="cat"
-            width={800}
-            height={600}
-          />
-        </section>
-        <section id="sendit" className="scroll-mt-24 mb-16">
-          <Image
-            src="/img/os-img/too-much-coffee-sendit.jpg"
-            alt="send it"
-            width={800}
-            height={600}
-          />
-        </section>
-        <section id="username" className="scroll-mt-24 mb-16">
-          <Image
-            src="/img/os-img/too-much-coffee-username.jpg"
-            alt="username"
-            width={800}
-            height={600}
-          />
-        </section>
+      </section>
+      <section id="anticipation" className="scroll-mt-24 mb-16">
+        <Image
+          src="/img/os-img/too-much-coffee-anticipation.jpg"
+          alt="anticipation"
+          width={800}
+          height={600}
+        />
+      </section>
+      <section id="cat" className="scroll-mt-24 mb-16">
+        <Image
+          src="/img/os-img/too-much-coffee-cat.jpg"
+          alt="cat"
+          width={800}
+          height={600}
+        />
+      </section>
+      <section id="sendit" className="scroll-mt-24 mb-16">
+        <Image
+          src="/img/os-img/too-much-coffee-sendit.jpg"
+          alt="send it"
+          width={800}
+          height={600}
+        />
+      </section>
+      <section id="username" className="scroll-mt-24 mb-16">
+        <Image
+          src="/img/os-img/too-much-coffee-username.jpg"
+          alt="username"
+          width={800}
+          height={600}
+        />
       </section>
     </div>
   );
