@@ -1,7 +1,7 @@
 export default function HistoryPodcast() {
   return (
     <div className="container mx-auto px-4 md:px-16 pt-4 md:pt-8 max-w-6xl">
-      <div className="grid grid-cols-1 gap-y-8 md:gap-y-16">
+      <div className="grid grid-cols-1 gap-y-8 md:gap-y-8">
         <div>
           <h1>All Our Yesterdays: A history podcast</h1>
           <p>Explore fascinating historical narratives and discussions.</p>

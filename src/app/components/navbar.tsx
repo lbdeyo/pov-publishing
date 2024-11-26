@@ -138,10 +138,14 @@ const Navbar = () => {
             <Link href="/catalog" className="nav-link text-[1.5rem]">
               Catalog
             </Link>
-            <Link href="/book-podcast" className="nav-link text-[1.5rem]">
+            <Link
+              href="/podcasts/book-podcast"
+              className="nav-link text-[1.5rem]">
               Book Podcast
             </Link>
-            <Link href="/history-podcast" className="nav-link text-[1.5rem]">
+            <Link
+              href="/podcasts/history-podcast"
+              className="nav-link text-[1.5rem]">
               History Podcast
             </Link>
             <Link href="/contact" className="nav-link text-[1.5rem]">

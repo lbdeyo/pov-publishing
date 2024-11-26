@@ -42,7 +42,7 @@ const ContactForm = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="max-w-2xl mx-auto space-y-4">
+    <form onSubmit={handleSubmit} className="space-y-4 max-w-4xl ">
       <div>
         <label htmlFor="name" className="block text-base font-medium mb-1">
           Name
