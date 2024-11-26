@@ -25,6 +25,7 @@ export const metadata: Metadata = {
     "Great conversations are one of life's deepest pleasures. At Persistence of Vision Publishing, our mission is to inspire more of these meaningful exchanges by publishing daring and innovative work across media.",
   openGraph: {
     type: "website",
+    url: "https://pov-publishing.com",
     title: "Persistence of Vision Publishing",
     description:
       "Great conversations are one of life's deepest pleasures. At Persistence of Vision Publishing, our mission is to inspire more of these meaningful exchanges by publishing daring and innovative work across media.",
@@ -37,6 +38,9 @@ export const metadata: Metadata = {
       },
     ],
     siteName: "POV Publishing",
+  },
+  other: {
+    "fb:app_id": "123456789",
   },
   twitter: {
     card: "summary_large_image",
