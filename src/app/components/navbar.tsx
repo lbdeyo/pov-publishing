@@ -3,6 +3,15 @@
 import {useState, useEffect} from "react";
 import Link from "next/link";
 import Image from "next/image";
+import {Menu, MenuButton, MenuItems, MenuItem} from "@headlessui/react";
+import {ChevronDownIcon} from "@heroicons/react/20/solid";
+
+const writers = [
+  {name: "L.B. Deyo", href: "/artists/writers/lbdeyo"},
+  {name: "Milaka Falk", href: "/artists/writers/milaka-falk"},
+  {name: "W. Joe Hoppe", href: "/artists/writers/w-joe-hoppe"},
+  // ... any other existing writers ...
+];
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -64,9 +73,32 @@ const Navbar = () => {
             />
           </Link>
           <div className="hidden md:flex items-center space-x-8">
-            <Link href="/artists-writers" className="nav-link text-[1.5rem]">
-              Artists/Writers
-            </Link>
+            <Menu as="div" className="relative inline-block text-left">
+              <MenuButton className="inline-flex items-center nav-link text-[1.5rem]">
+                Writers
+                <ChevronDownIcon className="ml-1 h-5 w-5" aria-hidden="true" />
+              </MenuButton>
+
+              <MenuItems
+                className="absolute z-10 mt-2 w-56 origin-top-right rounded-md shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
+                style={{backgroundColor: "var(--bg-primary)"}}>
+                <div className="py-1">
+                  {writers.map((writer) => (
+                    <MenuItem key={writer.name}>
+                      {({active}) => (
+                        <Link
+                          href={writer.href}
+                          className={`${
+                            active ? "bg-opacity-10 bg-gray-100" : ""
+                          } block px-4 py-2 text-[1rem] nav-link`}>
+                          {writer.name}
+                        </Link>
+                      )}
+                    </MenuItem>
+                  ))}
+                </div>
+              </MenuItems>
+            </Menu>
             <Link href="/catalog" className="nav-link text-[1.5rem]">
               Catalog
             </Link>
@@ -128,12 +160,20 @@ const Navbar = () => {
           className="md:hidden border-t"
           style={{backgroundColor: "var(--bg-primary)"}}>
           <div className="flex flex-col px-4 py-6 space-y-6">
-            <Link
-              href="/artists-writers"
-              className="nav-link text-[1.5rem]"
-              onClick={() => setIsMenuOpen(false)}>
-              Artists/Writers
-            </Link>
+            <div className="space-y-2">
+              <div className="nav-link text-[1.5rem]">Writers</div>
+              <div className="pl-4 space-y-2">
+                {writers.map((writer) => (
+                  <Link
+                    key={writer.name}
+                    href={writer.href}
+                    className="block nav-link text-[1.25rem]"
+                    onClick={() => setIsMenuOpen(false)}>
+                    {writer.name}
+                  </Link>
+                ))}
+              </div>
+            </div>
             <Link
               href="/catalog"
               className="nav-link text-[1.5rem]"

@@ -26,7 +26,7 @@ export default function Catalog() {
             <h2>
               <em>Clash of the Christmas Clones</em>
             </h2>
-            <h4>A holiday novella by Lance Fever Myers</h4>
+            <h3>A holiday novella by Lance Fever Myers</h3>
             <p className="my-2 font-bold">
               <a href="https://www.amazon.com/gp/product/1092341897/ref=dbs_a_def_rwt_bibl_vppi_i0">
                 Buy the paperback
@@ -57,7 +57,7 @@ export default function Catalog() {
             <h2>
               <em>The God-Damn Fool</em>
             </h2>
-            <h4>a novel by L.B. Deyo</h4>
+            <h3>a novel by L.B. Deyo</h3>
             <div className="flex">
               <p className="my-2 font-bold">
                 <a href="https://www.amazon.com/God-Damn-Fool-L-B-Deyo/dp/1690616547/ref=sr_1_1?keywords=God+Damn+Goddamn&qid=1569183014&sr=8-1&fbclid=IwAR02tLTmLbPtUmgPkoYp2600RItc6L1xNawLwuXx-HOqqcUfnUEa9mHgRgI">
@@ -99,7 +99,7 @@ export default function Catalog() {
             <h2>
               <em>Why So Much?</em>
             </h2>
-            <h4>a novel by Lance Fever Myers</h4>
+            <h3>a novel by Lance Fever Myers</h3>
             <div className="flex">
               <p className="my-2 font-bold">
                 <a href="https://www.amazon.com/Why-So-Much-Lance-Myers/dp/1091146128/ref=tmm_pap_swatch_0?_encoding=UTF8&qid=&sr=">
@@ -138,7 +138,7 @@ export default function Catalog() {
             <h2>
               <em>I Am the Man From Space</em>
             </h2>
-            <h4>A hip-hop album from Laughing Boy </h4>
+            <h3>A hip-hop album from Laughing Boy </h3>
             <div className="flex">
               <p className="my-2 font-bold">
                 <a href="https://music.apple.com/us/album/i-am-the-man-from-space/1612548255">
@@ -178,7 +178,7 @@ export default function Catalog() {
             <h2>
               <em>You Done Electrocuted Me</em>
             </h2>
-            <h4>A rock album from The Catfish Hunters </h4>
+            <h3>A rock album from The Catfish Hunters </h3>
             <div className="flex">
               <p className="my-2 font-bold">
                 <a href="https://open.spotify.com/album/09mUSlwj9AMgTLBlvB8voU?si=zS6TqGyrQWWaRoPHWFBvHg">

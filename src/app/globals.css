@@ -11,6 +11,7 @@
   --text-3xl: 2.25rem;
   --h1-color-light: #660000;
   --h1-color-dark: #c9bc93;
+  --button-text-color: white;
 }
 
 :root[data-theme="light"] {
@@ -25,6 +26,7 @@
   --text-primary: #ffffff;
   --nav-bg: #333333;
   --h1-color: var(--h1-color-dark);
+  --button-text-color: black;
 }
 
 @layer base {
@@ -40,15 +42,22 @@
   }
 
   p {
-    @apply text-[length:var(--text-base)] md:text-[length:var(--text-lg)] leading-[1.5];
+    @apply text-[length:var(--text-base)] md:text-[length:var(--text-lg)] leading-[1.5] mb-4;
   }
 
   h2 {
-    @apply text-[1.8rem] md:text-[length:var(--text-3xl)] leading-[1.25] mb-1;
+    @apply text-[1.8rem] md:text-[length:var(--text-3xl)] leading-[1.25] mb-1 py-4;
   }
 
   h1 + p {
     @apply text-[length:var(--text-intro)] md:text-[length:var(--text-intro-lg)];
+  }
+
+  h3 {
+    font-size: 1.5rem; /* 24px */
+    line-height: 1.5rem; /* 32px */
+    margin-top: 0.15rem;
+    margin-bottom: 1rem;
   }
 }
 
