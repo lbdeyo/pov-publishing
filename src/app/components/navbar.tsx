@@ -7,10 +7,20 @@ import {Menu, MenuButton, MenuItems, MenuItem} from "@headlessui/react";
 import {ChevronDownIcon} from "@heroicons/react/20/solid";
 
 const writers = [
-  {name: "L.B. Deyo", href: "/artists/writers/lbdeyo"},
-  {name: "Milaka Falk", href: "/artists/writers/milaka-falk"},
-  {name: "W. Joe Hoppe", href: "/artists/writers/w-joe-hoppe"},
+  {name: "L.B. Deyo", href: "/writers/lbdeyo"},
+  {name: "Milaka Falk", href: "/writers/milaka-falk"},
+  {name: "W. Joe Hoppe", href: "/writers/w-joe-hoppe"},
+  {name: "Juanice Myers", href: "/writers/juanice-myers"},
+  {name: "Don Ryan", href: "/writers/don-ryan"},
+  {name: "Roscoe Sweetwater", href: "/writers/roscoe-sweetwater"},
   // ... any other existing writers ...
+];
+const comics = [
+  {name: "Shannon Wheeler", href: "/comics/shannon-wheeler"},
+  {name: "Penny Van Horn", href: "/comics/penny-van-horn"},
+  {name: "Lance Fever Myers", href: "/comics/lance-fever-myers"},
+  {name: "Walt Holcombe", href: "/comics/walt-holcombe"},
+  {name: "Mack White", href: "/comics/mack-white"},
 ];
 
 const Navbar = () => {
@@ -99,6 +109,32 @@ const Navbar = () => {
                 </div>
               </MenuItems>
             </Menu>
+            <Menu as="div" className="relative inline-block text-left">
+              <MenuButton className="inline-flex items-center nav-link text-[1.5rem]">
+                Comics
+                <ChevronDownIcon className="ml-1 h-5 w-5" aria-hidden="true" />
+              </MenuButton>
+
+              <MenuItems
+                className="absolute z-10 mt-2 w-56 origin-top-right rounded-md shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none"
+                style={{backgroundColor: "var(--bg-primary)"}}>
+                <div className="py-1">
+                  {comics.map((comic) => (
+                    <MenuItem key={comic.name}>
+                      {({active}) => (
+                        <Link
+                          href={comic.href}
+                          className={`${
+                            active ? "bg-opacity-10 bg-gray-100" : ""
+                          } block px-4 py-2 text-[1rem] nav-link`}>
+                          {comic.name}
+                        </Link>
+                      )}
+                    </MenuItem>
+                  ))}
+                </div>
+              </MenuItems>
+            </Menu>
             <Link href="/catalog" className="nav-link text-[1.5rem]">
               Catalog
             </Link>
@@ -107,9 +143,6 @@ const Navbar = () => {
             </Link>
             <Link href="/history-podcast" className="nav-link text-[1.5rem]">
               History Podcast
-            </Link>
-            <Link href="/comics" className="nav-link text-[1.5rem]">
-              Comics
             </Link>
             <Link href="/contact" className="nav-link text-[1.5rem]">
               Contact
@@ -174,6 +207,20 @@ const Navbar = () => {
                 ))}
               </div>
             </div>
+            <div className="space-y-2">
+              <div className="nav-link text-[1.5rem]">Comics</div>
+              <div className="pl-4 space-y-2">
+                {comics.map((comic) => (
+                  <Link
+                    key={comic.name}
+                    href={comic.href}
+                    className="block nav-link text-[1.25rem]"
+                    onClick={() => setIsMenuOpen(false)}>
+                    {comic.name}
+                  </Link>
+                ))}
+              </div>
+            </div>
             <Link
               href="/catalog"
               className="nav-link text-[1.5rem]"
@@ -191,12 +238,6 @@ const Navbar = () => {
               className="nav-link text-[1.5rem]"
               onClick={() => setIsMenuOpen(false)}>
               History Podcast
-            </Link>
-            <Link
-              href="/comics"
-              className="nav-link text-[1.5rem]"
-              onClick={() => setIsMenuOpen(false)}>
-              Comics
             </Link>
             <Link
               href="/contact"
