@@ -36,17 +36,33 @@ export default function ScrollSpy({sections}: ScrollSpyProps) {
     return () => observer.disconnect();
   }, [sections]);
 
+  const scrollToSection = (e: React.MouseEvent, id: string) => {
+    e.preventDefault();
+    document.getElementById(id)?.scrollIntoView({behavior: "smooth"});
+  };
+
   return (
     <nav className="hidden lg:block fixed left-8 top-32 w-64">
-      <div className="text-xl mb-4">Contents</div>
+      <div
+        className="text-xl mb-4 font-semibold"
+        style={{color: "var(--text-primary)"}}>
+        Contents
+      </div>
       <ul className="space-y-2">
         {sections.map((section) => (
           <li key={section.id}>
             <a
               href={`#${section.id}`}
-              className={`block text-lg transition-colors duration-200 hover:text-gray-500 ${
-                activeSection === section.id ? "text-white" : "text-gray-400"
-              }`}>
+              onClick={(e) => scrollToSection(e, section.id)}
+              style={{color: "var(--text-primary)"}}
+              className={`
+                block text-lg transition-colors duration-200
+                ${
+                  activeSection === section.id
+                    ? "font-medium"
+                    : "opacity-75 hover:opacity-100"
+                }
+              `}>
               {section.title}
             </a>
           </li>
