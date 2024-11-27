@@ -11,7 +11,7 @@ export default function Home() {
             Welcome to Persistence of Vision Publishing
           </h1>
           <p className="max-w-4xl">
-            Great conversations are one of life's deepest pleasures. At
+            Great conversations are one of life's dopest pleasures. At
             Persistence of Vision Publishing, our mission is to inspire more of
             these meaningful exchanges by publishing daring and innovative work
             across media.
