@@ -232,13 +232,13 @@ const Navbar = () => {
               Catalog
             </Link>
             <Link
-              href="/book-podcast"
+              href="/podcasts/book-podcast"
               className="nav-link text-[1.5rem]"
               onClick={() => setIsMenuOpen(false)}>
               Book Podcast
             </Link>
             <Link
-              href="/history-podcast"
+              href="/podcasts/history-podcast"
               className="nav-link text-[1.5rem]"
               onClick={() => setIsMenuOpen(false)}>
               History Podcast
