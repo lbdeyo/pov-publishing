@@ -16,7 +16,7 @@ const zillaSlabHighlight = Zilla_Slab_Highlight({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://povpublishing.com"), // Replace with your actual domain
+  metadataBase: new URL("https://pov-publishing.com"),
   title: {
     default: "Persistence of Vision Publishing",
     template: "%s | POV Publishing",
