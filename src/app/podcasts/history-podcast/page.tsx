@@ -10,6 +10,23 @@ export default function HistoryPodcast() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 gap-y-16">
           <div>
             <iframe
+              title="9. The Peloponnesian War"
+              allowtransparency="true"
+              height="150"
+              width="100%"
+              data-name="pb-iframe-player"
+              src="https://www.podbean.com/player-v2/?i=ehm7z-1772235-pb&from=pb6admin&share=1&download=1&rtl=0&fonts=Arial&skin=1&font-color=auto&logo_link=episode_page&btn-skin=7"
+              loading="lazy"></iframe>
+            <h2 className="mt-5 mb-1">9. The Peloponnesian War ​</h2>
+            <p>
+              University of Texas philosophy professor Devin Stauffer joins the
+              show to discuss one of history's most consequential wars&mdash;a
+              war that pitted Sparta against Athens and triggered the decline of
+              Ancient Greece.
+            </p>
+          </div>
+          <div>
+            <iframe
               title="8. Early Ancient China"
               height="150"
               width="100%"
