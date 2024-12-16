@@ -11,7 +11,6 @@ export default function HistoryPodcast() {
           <div>
             <iframe
               title="9. The Peloponnesian War"
-              allowtransparency="true"
               height="150"
               width="100%"
               data-name="pb-iframe-player"
