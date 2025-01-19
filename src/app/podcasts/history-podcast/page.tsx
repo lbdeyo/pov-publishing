@@ -9,6 +9,26 @@ export default function HistoryPodcast() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 gap-y-16">
           <div>
+          
+            <iframe 
+              title="10. The Bronze Age Collapse" 
+              height="150" 
+              width="100%" 
+              style={{
+                border: "none",
+                minWidth: "min(100%, 430px)",
+                height: "150px"
+              }} 
+              data-name="pb-iframe-player" 
+              src="https://www.podbean.com/player-v2/?from=embed&i=kzpv7-17b95db-pb&share=1&download=1&fonts=Arial&skin=1&font-color=auto&rtl=0&logo_link=episode_page&btn-skin=7&size=150" 
+              loading="lazy"
+            />
+            <h2 className="mt-5 mb-1">10. The Bronze Age Collapse ​</h2>
+            <p>
+            What do you do when your world dies around you? This was the question millions faced when a Pandora's box of troubles brought down the Mediterranean World at the end of the Bronze age. Join Lance, William and L.B. as they strive to crack one of the great mysteries of the human story.
+            </p>
+          </div>
+          <div>
             <iframe
               title="9. The Peloponnesian War"
               height="150"
@@ -36,7 +56,7 @@ export default function HistoryPodcast() {
             <p>
               A new civilization rises in the East, bringing sophisticated
               organization, profound philosophy, and bodies buried in city
-              walls. 
+              walls.
             </p>
           </div>
           <div>
@@ -53,7 +73,7 @@ export default function HistoryPodcast() {
               both highly advanced, highly influential nations of the ancient
               world, yet our knowledge of them is obscured by our inability to
               decipher their writing systems (Indus Valley Script and Linear
-              A). 
+              A).
             </p>
           </div>
           <div>
@@ -90,7 +110,7 @@ export default function HistoryPodcast() {
               are all inventions of the first great civilization, Mesopotamia,
               and all of them were to be found in the first city of history,
               Uruk. Join Lance, L.B. and producer William Gold for a discussion
-              of how the story of history began. 
+              of how the story of history began.
             </p>
           </div>
           <div>
