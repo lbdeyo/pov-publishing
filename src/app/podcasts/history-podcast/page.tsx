@@ -9,23 +9,43 @@ export default function HistoryPodcast() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8 gap-y-16">
           <div>
-          
-            <iframe 
-              title="10. The Bronze Age Collapse" 
-              height="150" 
-              width="100%" 
+
+            <iframe
+              title="11. The Assyrian Empire and You"
+              height="150"
+              width="100%"
               style={{
                 border: "none",
                 minWidth: "min(100%, 430px)",
                 height: "150px"
-              }} 
-              data-name="pb-iframe-player" 
-              src="https://www.podbean.com/player-v2/?from=embed&i=kzpv7-17b95db-pb&share=1&download=1&fonts=Arial&skin=1&font-color=auto&rtl=0&logo_link=episode_page&btn-skin=7&size=150" 
+              }}
+              data-name="pb-iframe-player"
+              src="https://www.podbean.com/player-v2/?i=ijzeu-18932ce-pb&from=pb6admin&share=1&download=1&rtl=0&fonts=Arial&skin=1&font-color=auto&logo_link=episode_page&btn-skin=7"
+              loading="lazy"
+            />
+            <h2 className="mt-5 mb-1">11. The Assyrian Empire and You​</h2>
+            <p>
+              What could the Assyrian Empire, the largest and most brutal of its day, possibly have to do with contemporary politics?
+            </p>
+          </div>
+          <div>
+
+            <iframe
+              title="10. The Bronze Age Collapse"
+              height="150"
+              width="100%"
+              style={{
+                border: "none",
+                minWidth: "min(100%, 430px)",
+                height: "150px"
+              }}
+              data-name="pb-iframe-player"
+              src="https://www.podbean.com/player-v2/?from=embed&i=kzpv7-17b95db-pb&share=1&download=1&fonts=Arial&skin=1&font-color=auto&rtl=0&logo_link=episode_page&btn-skin=7&size=150"
               loading="lazy"
             />
             <h2 className="mt-5 mb-1">10. The Bronze Age Collapse ​</h2>
             <p>
-            What do you do when your world dies around you? This was the question millions faced when a Pandora's box of troubles brought down the Mediterranean World at the end of the Bronze age. Join Lance, William and L.B. as they strive to crack one of the great mysteries of the human story.
+              What do you do when your world dies around you? This was the question millions faced when a Pandora's box of troubles brought down the Mediterranean World at the end of the Bronze age. Join Lance, William and L.B. as they strive to crack one of the great mysteries of the human story.
             </p>
           </div>
           <div>
